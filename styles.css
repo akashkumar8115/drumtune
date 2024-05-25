@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.drum-kit {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+}
+
+.drum {
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #61dafb;
+    color: #282c34;
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.drum:active,
+.drum.playing {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #61dafb;
+}
